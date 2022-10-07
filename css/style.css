@@ -1,0 +1,162 @@
+@import url('./menu.css');
+
+body {
+  text-align: center;
+}
+
+a {
+  color: #2d55f5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.works-a {
+  color: #25beb9;
+  margin-right: 10px;
+}
+
+.works-a:hover {
+  color: #25beb9;
+  text-decoration: underline;
+}
+
+.icon {
+  width: 25%;
+  min-width: 170px;
+  max-width: 380px;
+}
+
+.head-h1 {
+  font-family: 'Sawarabi Mincho', serif;
+  font-size: 350%;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 959px) {
+  .head-h1 {
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 300%;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .head-h1 {
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 250%;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+}
+
+.head-h2 {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 959px) {
+  .head-h2 {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .head-h2 {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 25px;
+  }
+}
+
+#page-top {
+  position: fixed;
+  bottom: 17px;
+  right: 25px;
+  /*はじめは非表示*/
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+
+.button-on{
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+.button-off{
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime{
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}
+
+.work {
+  margin: 20px 0;
+}
+
+.works-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.works-a {
+  font-size: 35px;
+}
+
+.works-a-s {
+  font-size: 15px;
+  color: #eeeeee;
+}
+
+.works-a-s:hover {
+  color: #eeeeee;
+  text-decoration: underline;
+}
+
+.works-github-a {
+  font-size: 20px;
+}
+
+.hr {
+  height: 7px;
+  background: linear-gradient(55deg, #0a0a0a, 25%, #444444, 25%, #444444, 50%, #444444, 50%, #5f5f5f, 75%, #5f5f5f, 75%, #777777);
+}
+
+.skills-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.skill {
+  margin-bottom: 50px;
+}
