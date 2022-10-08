@@ -96,6 +96,7 @@ section {
 .menu-header {
   width: 100%;
   height: 80px;
+  font-family: 'Sawarabi Mincho', serif;
   background: #4c8acc;
   display: flex;
   align-items: center;
