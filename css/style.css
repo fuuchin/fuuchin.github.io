@@ -5,7 +5,6 @@ body {
 }
 
 a {
-  color: #2d55f5;
   text-decoration: none;
 }
 
@@ -23,10 +22,20 @@ a:hover {
   text-decoration: underline;
 }
 
+.topsns {
+  color:#393939;
+  font-weight: 500;
+  font-size: 25px;
+  background: linear-gradient(transparent, 86%, transparent, 86%, #444, 96%, #444, 96%, transparent);
+  font-style: italic;
+}
+
 .icon {
+  border: 5px solid #f0f0f0;
+  border-radius: 4px;
   width: 25%;
-  min-width: 170px;
-  max-width: 380px;
+  min-width: 100px;
+  max-width: 370px;
 }
 
 .head-h1 {
@@ -122,7 +131,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
 }
 
@@ -150,6 +159,7 @@ a:hover {
 }
 
 .skills-cards {
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -159,4 +169,12 @@ a:hover {
 
 .skill {
   margin-bottom: 50px;
+  width: 25rem;
+}
+
+@media screen and (max-width: 550px) {
+  .skill {
+    margin-bottom: 50px;
+    width: 100%
+  }
 }
