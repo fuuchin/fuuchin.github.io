@@ -78,6 +78,13 @@ section {
   padding: 70px;
 }
 
+@media screen and (max-width: 1200px) {
+  .section-Skills {
+    background: linear-gradient(90deg, #c3e1ff, 33%, #a4cdf5, 33%, #a4cdf5, 66%, #a4cdf5, 66%, #85bcf2);
+    padding: 70px 30px;
+  }
+}
+
 .section-Works {
   background: linear-gradient(90deg, #2df6f6, 20%, #2df6f6, 20%, #34e5e5, 40%, #34e5e5, 40%, #34cdcd, 60%, #34cdcd, 60%, #25beb9, 80%, #25beb9, 80%, #1baea9);
   padding: 80px 50px;
